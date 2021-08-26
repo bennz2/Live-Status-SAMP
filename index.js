@@ -23,7 +23,7 @@ function UpTimer()
 
 function UpdateStatus()
 {
-    getServerOnline("s1.dewatarp.xyz", 7777, function (error, response) {
+    getServerOnline("sg-game3.raznar.host", 7777, function (error, response) {
         if(error)
         {
             c = 0;
@@ -32,7 +32,7 @@ function UpdateStatus()
         }
         else
         {
-            var stats = `${response} Players | ${uptext}`
+            var stats = `${response} Players WorldWar SAMP`
             client.user.setActivity(stats, {type:'PLAYING'})
         }
     })
